@@ -29,6 +29,7 @@ class Settings(object):
         self.inventory_ignore_failed_render = options.get('inventory_ignore_failed_render', OPT_INVENTORY_IGNORE_FAILED_RENDER)
         self.reference_sentinels = options.get('reference_sentinels', REFERENCE_SENTINELS)
         self.ignore_class_notfound = options.get('ignore_class_notfound', OPT_IGNORE_CLASS_NOTFOUND)
+        self.add_subdir_to_node = options.get('add_subdir_to_node', OPT_ADD_SUBDIR_TO_NODE)
 
         self.ignore_class_notfound_regexp = options.get('ignore_class_notfound_regexp', OPT_IGNORE_CLASS_NOTFOUND_REGEXP)
         if isinstance(self.ignore_class_notfound_regexp, string_types):
