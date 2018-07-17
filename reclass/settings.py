@@ -61,7 +61,8 @@ class Settings(object):
                and self.reference_sentinels == other.reference_sentinels \
                and self.ignore_class_notfound == other.ignore_class_notfound \
                and self.ignore_class_notfound_regexp == other.ignore_class_notfound_regexp \
-               and self.ignore_class_notfound_warning == other.ignore_class_notfound_warning
+               and self.ignore_class_notfound_warning == other.ignore_class_notfound_warning \
+               and self.add_subdir_to_node == other.add_subdir_to_node
 
     def __copy__(self):
         cls = self.__class__

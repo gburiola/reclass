@@ -15,7 +15,7 @@ from .output import OutputLoader
 from .storage.loader import StorageBackendLoader
 from .storage.memcache_proxy import MemcacheProxy
 
-def get_storage(storage_type, nodes_uri, classes_uri, **kwargs):
+def get_storage(storage_type, nodes_uri, classes_uri, add_subdir_to_node, **kwargs):
     storage_class = StorageBackendLoader(storage_type).load()
     return MemcacheProxy(storage_class(nodes_uri, classes_uri, add_subdir_to_node, **kwargs))
 
